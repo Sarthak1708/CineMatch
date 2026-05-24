@@ -83,6 +83,7 @@ User Query (natural language / mood / chat)
 ---
 
 ## Project Structure
+```
 CineAI/
 ├── app.py                  # Streamlit UI — search, mood, chat modes
 ├── requirements.txt
@@ -97,7 +98,7 @@ CineAI/
 ├── retriever.py        # Semantic search logic
 ├── mood_mapper.py      # Mood → genre/tone mapping via Groq
 └── chatbot.py          # Multi-turn conversation logic
-
+```
 ---
 
 ## Local Setup
@@ -152,7 +153,6 @@ streamlit run app.py
 ## Author
 
 **Sarthak Patel**
-Final Year B.Tech CSE — Medi-Caps University, Indore
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sarthak%20Patel-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/sarthak-patel-415533250)
 [![GitHub](https://img.shields.io/badge/GitHub-Sarthak1708-181717?style=flat&logo=github&logoColor=white)](https://github.com/Sarthak1708)

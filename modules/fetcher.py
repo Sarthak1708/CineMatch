@@ -9,7 +9,8 @@ from modules.db import get_connection
 
 load_dotenv()
 
-ACCESS_TOKEN = os.getenv("TMDB_ACCESS_TOKEN")
+from modules.config import get_secret
+ACCESS_TOKEN = get_secret("TMDB_ACCESS_TOKEN")
 
 HEADERS = {
     "Authorization": f"Bearer {ACCESS_TOKEN}",

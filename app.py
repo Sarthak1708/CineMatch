@@ -9,7 +9,8 @@ from modules.mood_mapper import map_mood_to_query
 from modules.chatbot import chat, stream_chat, generate_explanation
 from modules.db import get_connection
 from groq import Groq
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+from modules.config import get_secret
+client = Groq(api_key=get_secret("GROQ_API_KEY"))
 
 st.set_page_config(
     page_title="CineAI",

@@ -10,7 +10,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+from modules.config import get_secret
+client = Groq(api_key=get_secret("GROQ_API_KEY"))
 
 def generate_explanation(movie, user_query):
     prompt = f"""

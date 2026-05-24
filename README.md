@@ -53,6 +53,7 @@ For every recommendation, CineAI generates a personalized explanation of why you
 ---
 
 ## Architecture
+```
 User Query (natural language / mood / chat)
 │
 ▼
@@ -79,7 +80,7 @@ User Query (natural language / mood / chat)
 ┌───────────────┐
 │ Streamlit UI  │  ← Renders movie cards with posters, metadata, explanations
 └───────────────┘
-
+```
 ---
 
 ## Project Structure
